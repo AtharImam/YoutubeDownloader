@@ -69,7 +69,6 @@
             this.txtPath.Name = "txtPath";
             this.txtPath.Size = new System.Drawing.Size(370, 20);
             this.txtPath.TabIndex = 2;
-            this.txtPath.Text = "d:\\TestApp";
             // 
             // btnCancel
             // 
