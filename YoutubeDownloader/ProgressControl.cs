@@ -99,7 +99,7 @@ namespace YoutubeDownloader
             else
             {
                 var id = YoutubeClient.ParseVideoId(downloadedUrl);
-                await this.DownloadVideo(id);
+                downloadingVideo = await this.DownloadVideo(id);
             }
 
             if (downloadingVideo)
@@ -108,7 +108,7 @@ namespace YoutubeDownloader
             }
         }
 
-        private async Task DownloadVideo(string id, string info = "")
+        private async Task<bool> DownloadVideo(string id, string info = "")
         {
             try
             {
@@ -137,20 +137,70 @@ namespace YoutubeDownloader
                 }
 
                 string oldFileName = Path.Combine(downloadedPath, filePath);
-                string indexFileName = Path.Combine(downloadedPath, info + "_" + filePath);
+                string indexFileName = Path.Combine(downloadedPath, (string.IsNullOrEmpty(info) ? "" : (info + "_")) + filePath);
                 if(File.Exists(oldFileName))
                 {
                     File.Move(oldFileName, indexFileName);
-                    return;
+                    return true;
                 }
 
                 picBox.Load(video.Thumbnails.LowResUrl);
                 // Download stream to file
                 await client.DownloadMediaStreamAsync(streamInfo, indexFileName);
+                return true;
             }
-            catch
+            catch(Exception ex)
             {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
 
+        private async Task<bool> DownloadVideo1(string id, string info = "")
+        {
+            try
+            {
+                YoutubeClient client = new YoutubeClient();
+
+                Video video = await client.GetVideoAsync(id);
+                this.lblVideo.Text = video.Title;
+                // Get metadata for all streams in this video
+                var streamInfoSet = await client.GetVideoMediaStreamInfosAsync(id);
+
+                // Select one of the streams, e.g. highest quality muxed stream
+                var streamInfo = streamInfoSet.Muxed.First(item => item.VideoQuality == streamInfoSet.Muxed.Max(itm => itm.VideoQuality));
+
+                // Get file extension based on stream's container
+                var ext = streamInfo.Container.ToString();
+
+                string filePath = video.Title + "." + ext;
+
+                filePath = filePath.Replace("/", "");
+
+                string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
+
+                foreach (char c in invalid)
+                {
+                    filePath = filePath.Replace(c.ToString(), "");
+                }
+
+                string oldFileName = Path.Combine(downloadedPath, filePath);
+                string indexFileName = Path.Combine(downloadedPath, (string.IsNullOrEmpty(info) ? "" : (info + "_")) + filePath);
+                if (File.Exists(oldFileName))
+                {
+                    File.Move(oldFileName, indexFileName);
+                    return true;
+                }
+
+                picBox.Load(video.Thumbnails.LowResUrl);
+                // Download stream to file
+                await client.DownloadMediaStreamAsync(streamInfo, indexFileName);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
             }
         }
     }

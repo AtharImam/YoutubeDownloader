@@ -29,11 +29,17 @@ namespace YoutubeDownloader
         private void btnDownload_ClickAsync(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
+            if (this.IsDefaultPath.Checked)
+            {
+                Shared.VideoPath = this.txtPath.Text;
+            }
+
             this.Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.txtPath.Text = Shared.VideoPath;
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)
@@ -48,6 +54,11 @@ namespace YoutubeDownloader
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void IsDefaultPath_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
