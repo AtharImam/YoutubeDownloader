@@ -63,6 +63,8 @@
             this.txtUrl.Name = "txtUrl";
             this.txtUrl.Size = new System.Drawing.Size(585, 20);
             this.txtUrl.TabIndex = 1;
+            this.txtUrl.Text = "https://www.youtube.com/watch?v=qR4KXDK4HWE&list=PLMQRDr0Z_gob2vz_2ffUpD_qJtAbLQD" +
+    "Yj";
             // 
             // txtPath
             // 
@@ -70,6 +72,7 @@
             this.txtPath.Name = "txtPath";
             this.txtPath.Size = new System.Drawing.Size(370, 20);
             this.txtPath.TabIndex = 2;
+            this.txtPath.Text = "D:\\Personal\\test";
             // 
             // btnCancel
             // 

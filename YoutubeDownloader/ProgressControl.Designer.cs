@@ -38,6 +38,7 @@
             this.lblProgress = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblVideoCount = new System.Windows.Forms.Label();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             this.progressBar1.Location = new System.Drawing.Point(112, 94);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(388, 23);
+            this.progressBar1.Step = 1;
             this.progressBar1.TabIndex = 2;
             // 
             // btnClose
@@ -120,18 +122,27 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(111, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Total Downloaded Video";
+            this.label3.Text = "Total Video";
             // 
             // lblVideoCount
             // 
             this.lblVideoCount.AutoSize = true;
-            this.lblVideoCount.Location = new System.Drawing.Point(253, 71);
+            this.lblVideoCount.Location = new System.Drawing.Point(182, 71);
             this.lblVideoCount.Name = "lblVideoCount";
             this.lblVideoCount.Size = new System.Drawing.Size(19, 13);
             this.lblVideoCount.TabIndex = 4;
             this.lblVideoCount.Text = "    ";
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Location = new System.Drawing.Point(218, 71);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(282, 16);
+            this.progressBar2.Step = 1;
+            this.progressBar2.TabIndex = 5;
+            this.progressBar2.Visible = false;
             // 
             // ProgressControl
             // 
@@ -139,6 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.lblVideoCount);
             this.Controls.Add(this.lblProgress);
             this.Controls.Add(this.lblVideo);
@@ -169,5 +181,6 @@
         private System.Windows.Forms.Label lblProgress;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblVideoCount;
+        private System.Windows.Forms.ProgressBar progressBar2;
     }
 }

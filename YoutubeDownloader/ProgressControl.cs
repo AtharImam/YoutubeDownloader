@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YoutubeExplode;
-using YoutubeExplode.Models;
 using System.IO;
+using YoutubeExplode.Videos;
+using YoutubeExplode.Videos.Streams;
+using System.Diagnostics;
 
 namespace YoutubeDownloader
 {
-    public partial class ProgressControl : UserControl
+    public partial class ProgressControl : UserControl, IProgress<double>
     {
         string downloadedPath;
       
@@ -39,17 +36,21 @@ namespace YoutubeDownloader
             await this.DownloadVideo();
         }
 
+        bool isList = false;
+
         private async Task DownloadVideo()
         {
             YoutubeClient client = new YoutubeClient();
 
             if (downloadedUrl.IndexOf("&list=") > 0)
             {
+                isList = true;
                 string id = downloadedUrl.Split(new string[] { "&list=" }, StringSplitOptions.RemoveEmptyEntries)[1];
-                var playlist = await client.GetPlaylistAsync(id);
-                int count = playlist.Videos.Count();
-                this.progressBar1.Step = 1;
+                var playlist = await client.Playlists.GetVideosAsync(id);
+                int count = playlist.Count();
                 this.progressBar1.Maximum = count;
+                this.progressBar2.Visible = true;
+                
                 Func<int, int, string> appendZero = (fileIndex, totalVideos) =>
                 {
                     string append = string.Empty;
@@ -79,7 +80,7 @@ namespace YoutubeDownloader
                 {
                     int index = 0;
                     lblVideoCount.Text = index + "/" + count;
-                    foreach (var vid in playlist.Videos)
+                    foreach (var vid in playlist)
                     {
                         string zero = appendZero(index + 1, count) + (index+1);
                         await this.DownloadVideo(vid.Id, "Part" + zero);
@@ -92,13 +93,16 @@ namespace YoutubeDownloader
                         this.progressBar1.PerformStep();
                         lblProgress.Text = Convert.ToInt32(this.progressBar1.Value * 100 / count) + "%";
                         lblVideoCount.Text = index + "/" + count;
+                        this.progressBar2.Value = 0;
                     }
 
                 }
             }
             else
             {
-                var id = YoutubeClient.ParseVideoId(downloadedUrl);
+                this.progressBar2.Visible = false;
+                this.progressBar1.Maximum = 100;
+                var id = new VideoId(downloadedUrl);
                 downloadingVideo = await this.DownloadVideo(id);
             }
 
@@ -108,72 +112,19 @@ namespace YoutubeDownloader
             }
         }
 
-        private async Task<bool> DownloadVideo(string id, string info = "")
+        private async Task<bool> DownloadVideo(VideoId videoId, string info = "")
         {
             try
             {
                 YoutubeClient client = new YoutubeClient();
 
-                Video video = await client.GetVideoAsync(id);
+                Video video = await client.Videos.GetAsync(videoId);
                 this.lblVideo.Text = video.Title;
-                // Get metadata for all streams in this video
-                var streamInfoSet = await client.GetVideoMediaStreamInfosAsync(id);
 
-                // Select one of the streams, e.g. highest quality muxed stream
-                var streamInfo = streamInfoSet.Muxed.First(item => item.VideoQuality == streamInfoSet.Muxed.Max(itm => itm.VideoQuality));
+                var streams = await client.Videos.Streams.GetManifestAsync(videoId);
+                var streamInfoSet = streams.GetMuxed().WithHighestVideoQuality();
 
-                // Get file extension based on stream's container
-                var ext = streamInfo.Container.ToString();
-
-                string filePath = video.Title + "." + ext;
-
-                filePath = filePath.Replace("/", "");
-
-                string invalid = new string(Path.GetInvalidFileNameChars()) + new string(Path.GetInvalidPathChars());
-
-                foreach (char c in invalid)
-                {
-                    filePath = filePath.Replace(c.ToString(), "");
-                }
-
-                string oldFileName = Path.Combine(downloadedPath, filePath);
-                string indexFileName = Path.Combine(downloadedPath, (string.IsNullOrEmpty(info) ? "" : (info + "_")) + filePath);
-                if(File.Exists(oldFileName))
-                {
-                    File.Move(oldFileName, indexFileName);
-                    return true;
-                }
-
-                picBox.Load(video.Thumbnails.LowResUrl);
-                // Download stream to file
-                await client.DownloadMediaStreamAsync(streamInfo, indexFileName);
-                return true;
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return false;
-            }
-        }
-
-        private async Task<bool> DownloadVideo1(string id, string info = "")
-        {
-            try
-            {
-                YoutubeClient client = new YoutubeClient();
-
-                Video video = await client.GetVideoAsync(id);
-                this.lblVideo.Text = video.Title;
-                // Get metadata for all streams in this video
-                var streamInfoSet = await client.GetVideoMediaStreamInfosAsync(id);
-
-                // Select one of the streams, e.g. highest quality muxed stream
-                var streamInfo = streamInfoSet.Muxed.First(item => item.VideoQuality == streamInfoSet.Muxed.Max(itm => itm.VideoQuality));
-
-                // Get file extension based on stream's container
-                var ext = streamInfo.Container.ToString();
-
-                string filePath = video.Title + "." + ext;
+                string filePath = video.Title + "." + streamInfoSet.Container.Name;
 
                 filePath = filePath.Replace("/", "");
 
@@ -193,14 +144,27 @@ namespace YoutubeDownloader
                 }
 
                 picBox.Load(video.Thumbnails.LowResUrl);
-                // Download stream to file
-                await client.DownloadMediaStreamAsync(streamInfo, indexFileName);
+
+                await client.Videos.Streams.DownloadAsync(streamInfoSet, indexFileName, this);
+                
                 return true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 return false;
+            }
+        }
+
+        public void Report(double value)
+        {
+            var progressBar = this.isList ? this.progressBar2 : this.progressBar1;
+
+            progressBar.Value = Convert.ToInt32(value * 100);
+
+            if (!this.isList)
+            {
+                lblProgress.Text = Convert.ToInt32(this.progressBar1.Value) + "%";
             }
         }
     }
