@@ -1,0 +1,155 @@
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe.config
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.pdb
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Form1.resources
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Properties.Resources.resources
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.GenerateResource.cache
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CoreCompileInputs.cache
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CopyComplete
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.exe
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.pdb
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\LtGt.dll
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\Sprache.dll
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.dll
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\LtGt.xml
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\Sprache.xml
+C:\Users\Afeefah Aliya\source\repos\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.xml
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe.config
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.pdb
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\LtGt.dll
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\Newtonsoft.Json.dll
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\Sprache.dll
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.dll
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\LtGt.xml
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\Newtonsoft.Json.xml
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\Sprache.xml
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.xml
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csprojAssemblyReference.cache
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Form1.resources
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Properties.Resources.resources
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.GenerateResource.cache
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CoreCompileInputs.cache
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CopyComplete
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.exe
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.pdb
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.MainForm.resources
+C:\Users\atahar2380\Downloads\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.ProgressControl.resources
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe.config
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.exe
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeDownloader.pdb
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\Microsoft.Win32.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\netstandard.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.AppContext.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Collections.Concurrent.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Collections.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Collections.NonGeneric.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Collections.Specialized.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ComponentModel.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ComponentModel.EventBasedAsync.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ComponentModel.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ComponentModel.TypeConverter.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Console.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Data.Common.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.Contracts.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.Debug.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.FileVersionInfo.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.Process.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.StackTrace.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.TextWriterTraceListener.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.Tools.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.TraceSource.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Diagnostics.Tracing.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Drawing.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Dynamic.Runtime.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Globalization.Calendars.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Globalization.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Globalization.Extensions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.Compression.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.Compression.ZipFile.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.FileSystem.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.FileSystem.DriveInfo.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.FileSystem.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.FileSystem.Watcher.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.IsolatedStorage.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.MemoryMappedFiles.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.Pipes.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.IO.UnmanagedMemoryStream.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Linq.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Linq.Expressions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Linq.Parallel.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Linq.Queryable.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Http.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.NameResolution.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.NetworkInformation.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Ping.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Requests.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Security.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.Sockets.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.WebHeaderCollection.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.WebSockets.Client.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Net.WebSockets.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ObjectModel.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Reflection.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Reflection.Extensions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Reflection.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Resources.Reader.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Resources.ResourceManager.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Resources.Writer.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.CompilerServices.VisualC.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Extensions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Handles.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.InteropServices.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Numerics.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Serialization.Formatters.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Serialization.Json.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Serialization.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Runtime.Serialization.Xml.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Claims.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Cryptography.Csp.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.Principal.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Security.SecureString.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Text.Encoding.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Text.Encoding.Extensions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Text.RegularExpressions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Overlapped.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Tasks.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Tasks.Parallel.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Thread.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.ThreadPool.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Timer.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.ValueTuple.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.ReaderWriter.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.XDocument.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.XmlDocument.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.XmlSerializer.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.XPath.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Xml.XPath.XDocument.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.dll
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Debug\YoutubeExplode.xml
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csprojAssemblyReference.cache
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.exe.config
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Form1.resources
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.MainForm.resources
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.ProgressControl.resources
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.Properties.Resources.resources
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.GenerateResource.cache
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CoreCompileInputs.cache
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.csproj.CopyComplete
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.exe
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Debug\YoutubeDownloader.pdb

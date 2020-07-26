@@ -1,19 +1,20 @@
 ﻿using System;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using YoutubeExplode;
 using System.IO;
 using YoutubeExplode.Videos;
 using YoutubeExplode.Videos.Streams;
-using System.Diagnostics;
+using System.Threading.Tasks;
+using YoutubeExplode.Playlists;
+using System.Collections.Generic;
 
 namespace YoutubeDownloader
 {
     public partial class ProgressControl : UserControl, IProgress<double>
     {
         string downloadedPath;
-      
+
         string downloadedUrl;
 
         bool downloadingVideo = true;
@@ -46,11 +47,15 @@ namespace YoutubeDownloader
             {
                 isList = true;
                 string id = downloadedUrl.Split(new string[] { "&list=" }, StringSplitOptions.RemoveEmptyEntries)[1];
-                var playlist = await client.Playlists.GetVideosAsync(id);
+                PlaylistId plId = new PlaylistId(id);
+                var videolist = client.Playlists.GetVideosAsync(plId);
+                List<string> playlist = new List<string>();
+                playlist = (await videolist.BufferAsync()).Select(item => item.Id.Value).ToList();
+
                 int count = playlist.Count();
                 this.progressBar1.Maximum = count;
                 this.progressBar2.Visible = true;
-                
+
                 Func<int, int, string> appendZero = (fileIndex, totalVideos) =>
                 {
                     string append = string.Empty;
@@ -82,8 +87,8 @@ namespace YoutubeDownloader
                     lblVideoCount.Text = index + "/" + count;
                     foreach (var vid in playlist)
                     {
-                        string zero = appendZero(index + 1, count) + (index+1);
-                        await this.DownloadVideo(vid.Id, "Part" + zero);
+                        string zero = appendZero(index + 1, count) + (index + 1);
+                        await this.DownloadVideo(vid, "Part" + zero);
                         index++;
                         if (!downloadingVideo)
                         {
@@ -146,7 +151,7 @@ namespace YoutubeDownloader
                 picBox.Load(video.Thumbnails.LowResUrl);
 
                 await client.Videos.Streams.DownloadAsync(streamInfoSet, indexFileName, this);
-                
+
                 return true;
             }
             catch (Exception ex)
