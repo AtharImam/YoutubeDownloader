@@ -39,7 +39,7 @@ namespace YoutubeDownloader
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.txtPath.Text = @"d:\personal";// Shared.VideoPath;
+            //this.txtPath.Text = @"d:\personal";// Shared.VideoPath;
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

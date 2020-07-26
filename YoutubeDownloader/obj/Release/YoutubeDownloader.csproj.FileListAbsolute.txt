@@ -1,4 +1,3 @@
-D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.csprojAssemblyReference.cache
 D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.Form1.resources
 D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.MainForm.resources
 D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.ProgressControl.resources
@@ -132,3 +131,8 @@ D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\System.Runtime.Compi
 D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\System.Text.Encodings.Web.dll
 D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\System.Text.Json.dll
 D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\System.Text.Json.xml
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\YoutubeDownloader.exe.manifest
+D:\Personal\YoutubeDownloader\YoutubeDownloader\bin\Release\YoutubeDownloader.application
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.csprojAssemblyReference.cache
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.exe.manifest
+D:\Personal\YoutubeDownloader\YoutubeDownloader\obj\Release\YoutubeDownloader.application

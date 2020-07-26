@@ -11,17 +11,12 @@
         </member>
         <member name="M:YoutubeExplode.AccessibilityExtensions.BufferAsync(System.Collections.Generic.IAsyncEnumerable{YoutubeExplode.Videos.Video})">
             <summary>
-            Buffers the asynchronous list of videos in memory.
+            Buffers the asynchronous enumerable in memory.
             </summary>
         </member>
         <member name="M:YoutubeExplode.AccessibilityExtensions.BufferAsync(System.Collections.Generic.IAsyncEnumerable{YoutubeExplode.Videos.Video},System.Int32)">
             <summary>
-            Buffers the asynchronous list of videos in memory, up to the specified number of videos.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.AccessibilityExtensions.GetAwaiter(System.Collections.Generic.IAsyncEnumerable{YoutubeExplode.Videos.Video})">
-            <summary>
-            Gets the awaiter that encapsulates an operation that buffers a list of videos in-memory,
+            Buffers the asynchronous enumerable in memory, up to the specified number of videos.
             </summary>
         </member>
         <member name="T:YoutubeExplode.Channels.Channel">
@@ -105,25 +100,6 @@
         <member name="M:YoutubeExplode.Channels.ChannelId.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.Equals(YoutubeExplode.Channels.ChannelId)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.op_Equality(YoutubeExplode.Channels.ChannelId,YoutubeExplode.Channels.ChannelId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.op_Inequality(YoutubeExplode.Channels.ChannelId,YoutubeExplode.Channels.ChannelId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="M:YoutubeExplode.Channels.ChannelId.op_Implicit(System.String)~YoutubeExplode.Channels.ChannelId">
             <summary>
             Converts string to ID.
@@ -132,12 +108,6 @@
         <member name="M:YoutubeExplode.Channels.ChannelId.op_Implicit(YoutubeExplode.Channels.ChannelId)~System.String">
             <summary>
             Converts ID to string.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Channels.ChannelId.TryParse(System.String)">
-            <summary>
-            Attempts to parse the specified string as a channel ID or URL.
-            Returns null in case of failure.
             </summary>
         </member>
         <member name="T:YoutubeExplode.Channels.UserName">
@@ -158,25 +128,6 @@
         <member name="M:YoutubeExplode.Channels.UserName.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Channels.UserName.Equals(YoutubeExplode.Channels.UserName)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.UserName.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.UserName.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Channels.UserName.op_Equality(YoutubeExplode.Channels.UserName,YoutubeExplode.Channels.UserName)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Channels.UserName.op_Inequality(YoutubeExplode.Channels.UserName,YoutubeExplode.Channels.UserName)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="M:YoutubeExplode.Channels.UserName.op_Implicit(System.String)~YoutubeExplode.Channels.UserName">
             <summary>
             Converts string to user name.
@@ -185,12 +136,6 @@
         <member name="M:YoutubeExplode.Channels.UserName.op_Implicit(YoutubeExplode.Channels.UserName)~System.String">
             <summary>
             Converts user name to string.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Channels.UserName.TryParse(System.String)">
-            <summary>
-            Attempts to parse the specified string as a username or URL.
-            Returns null in case of failure.
             </summary>
         </member>
         <member name="T:YoutubeExplode.Common.Engagement">
@@ -354,15 +299,15 @@
             Playlist URL.
             </summary>
         </member>
-        <member name="P:YoutubeExplode.Playlists.Playlist.Title">
-            <summary>
-            Playlist title.
-            </summary>
-        </member>
         <member name="P:YoutubeExplode.Playlists.Playlist.Author">
             <summary>
             Playlist author.
             Can be null if it's a system playlist (e.g. Video Mix, Topics, etc.).
+            </summary>
+        </member>
+        <member name="P:YoutubeExplode.Playlists.Playlist.Title">
+            <summary>
+            Playlist title.
             </summary>
         </member>
         <member name="P:YoutubeExplode.Playlists.Playlist.Description">
@@ -370,18 +315,12 @@
             Playlist description.
             </summary>
         </member>
-        <member name="P:YoutubeExplode.Playlists.Playlist.Thumbnails">
-            <summary>
-            Available thumbnails for this playlist.
-            Can be null if the playlist is empty.
-            </summary>
-        </member>
         <member name="P:YoutubeExplode.Playlists.Playlist.Engagement">
             <summary>
             Engagement statistics.
             </summary>
         </member>
-        <member name="M:YoutubeExplode.Playlists.Playlist.#ctor(YoutubeExplode.Playlists.PlaylistId,System.String,System.String,System.String,YoutubeExplode.Common.ThumbnailSet,YoutubeExplode.Common.Engagement)">
+        <member name="M:YoutubeExplode.Playlists.Playlist.#ctor(YoutubeExplode.Playlists.PlaylistId,System.String,System.String,System.String,YoutubeExplode.Common.Engagement)">
             <summary>
             Initializes an instance of <see cref="T:YoutubeExplode.Playlists.Playlist"/>.
             </summary>
@@ -427,25 +366,6 @@
         <member name="M:YoutubeExplode.Playlists.PlaylistId.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.Equals(YoutubeExplode.Playlists.PlaylistId)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.op_Equality(YoutubeExplode.Playlists.PlaylistId,YoutubeExplode.Playlists.PlaylistId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.op_Inequality(YoutubeExplode.Playlists.PlaylistId,YoutubeExplode.Playlists.PlaylistId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="M:YoutubeExplode.Playlists.PlaylistId.op_Implicit(System.String)~YoutubeExplode.Playlists.PlaylistId">
             <summary>
             Converts string to ID.
@@ -454,12 +374,6 @@
         <member name="M:YoutubeExplode.Playlists.PlaylistId.op_Implicit(YoutubeExplode.Playlists.PlaylistId)~System.String">
             <summary>
             Converts ID to string.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Playlists.PlaylistId.TryParse(System.String)">
-            <summary>
-            Attempts to parse the specified string as a playlist ID or URL.
-            Returns null in case of failure.
             </summary>
         </member>
         <member name="T:YoutubeExplode.Search.SearchClient">
@@ -497,22 +411,9 @@
             Duration this caption is displayed.
             </summary>
         </member>
-        <member name="P:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption.Parts">
-            <summary>
-            Caption parts (usually individual words).
-            May be empty because not all captions contain parts.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption.#ctor(System.String,System.TimeSpan,System.TimeSpan,System.Collections.Generic.IReadOnlyList{YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart})">
+        <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption.#ctor(System.String,System.TimeSpan,System.TimeSpan)">
             <summary>
             Initializes an instance of <see cref="T:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption"/>.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption.TryGetPartByTime(System.TimeSpan)">
-            <summary>
-            Gets the caption part displayed at the specified point in time, relative to this caption's offset.
-            Returns null if not found.
-            Note that some captions may not have any parts at all.
             </summary>
         </member>
         <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaption.ToString">
@@ -570,29 +471,6 @@
             Gets the closed caption track in the specified language.
             Returns null if not found.
             </summary>
-        </member>
-        <member name="T:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart">
-            <summary>
-            Part of a closed caption (usually a single word).
-            </summary>
-        </member>
-        <member name="P:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart.Text">
-            <summary>
-            Text displayed by this caption part.
-            </summary>
-        </member>
-        <member name="P:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart.Offset">
-            <summary>
-            Time at which this caption part starts being displayed (relative to the caption's own offset).
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart.#ctor(System.String,System.TimeSpan)">
-            <summary>
-            Initializes an instance of <see cref="T:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart"/>.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionPart.ToString">
-            <inheritdoc />
         </member>
         <member name="T:YoutubeExplode.Videos.ClosedCaptions.ClosedCaptionTrack">
             <summary>
@@ -666,25 +544,6 @@
         <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.Equals(YoutubeExplode.Videos.ClosedCaptions.Language)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.op_Equality(YoutubeExplode.Videos.ClosedCaptions.Language,YoutubeExplode.Videos.ClosedCaptions.Language)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.ClosedCaptions.Language.op_Inequality(YoutubeExplode.Videos.ClosedCaptions.Language,YoutubeExplode.Videos.ClosedCaptions.Language)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="T:YoutubeExplode.Videos.Streams.AudioOnlyStreamInfo">
             <summary>
             YouTube media stream that only contains audio.
@@ -747,40 +606,11 @@
             </summary>
             <param name="bitsPerSecond"></param>
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.ToString">
-            <inheritdoc />
-        </member>
         <member name="M:YoutubeExplode.Videos.Streams.Bitrate.CompareTo(YoutubeExplode.Videos.Streams.Bitrate)">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.Equals(YoutubeExplode.Videos.Streams.Bitrate)">
+        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.ToString">
             <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.op_Equality(YoutubeExplode.Videos.Streams.Bitrate,YoutubeExplode.Videos.Streams.Bitrate)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.op_Inequality(YoutubeExplode.Videos.Streams.Bitrate,YoutubeExplode.Videos.Streams.Bitrate)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.op_GreaterThan(YoutubeExplode.Videos.Streams.Bitrate,YoutubeExplode.Videos.Streams.Bitrate)">
-            <summary>
-            Comparison.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Bitrate.op_LessThan(YoutubeExplode.Videos.Streams.Bitrate,YoutubeExplode.Videos.Streams.Bitrate)">
-            <summary>
-            Comparison.
-            </summary>
         </member>
         <member name="T:YoutubeExplode.Videos.Streams.Container">
             <summary>
@@ -800,25 +630,6 @@
         </member>
         <member name="M:YoutubeExplode.Videos.Streams.Container.ToString">
             <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Container.Equals(YoutubeExplode.Videos.Streams.Container)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Container.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Container.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Container.op_Equality(YoutubeExplode.Videos.Streams.Container,YoutubeExplode.Videos.Streams.Container)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Container.op_Inequality(YoutubeExplode.Videos.Streams.Container,YoutubeExplode.Videos.Streams.Container)">
-            <summary>
-            Equality check.
-            </summary>
         </member>
         <member name="P:YoutubeExplode.Videos.Streams.Container.Mp4">
             <summary>
@@ -870,40 +681,11 @@
             Initializes an instance of <see cref="T:YoutubeExplode.Videos.Streams.FileSize"/>.
             </summary>
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.ToString">
-            <inheritdoc />
-        </member>
         <member name="M:YoutubeExplode.Videos.Streams.FileSize.CompareTo(YoutubeExplode.Videos.Streams.FileSize)">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.Equals(YoutubeExplode.Videos.Streams.FileSize)">
+        <member name="M:YoutubeExplode.Videos.Streams.FileSize.ToString">
             <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.op_Equality(YoutubeExplode.Videos.Streams.FileSize,YoutubeExplode.Videos.Streams.FileSize)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.op_Inequality(YoutubeExplode.Videos.Streams.FileSize,YoutubeExplode.Videos.Streams.FileSize)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.op_GreaterThan(YoutubeExplode.Videos.Streams.FileSize,YoutubeExplode.Videos.Streams.FileSize)">
-            <summary>
-            Comparison.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.FileSize.op_LessThan(YoutubeExplode.Videos.Streams.FileSize,YoutubeExplode.Videos.Streams.FileSize)">
-            <summary>
-            Comparison.
-            </summary>
         </member>
         <member name="T:YoutubeExplode.Videos.Streams.Framerate">
             <summary>
@@ -920,40 +702,11 @@
             Initializes an instance of <see cref="T:YoutubeExplode.Videos.Streams.Framerate"/>.
             </summary>
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.ToString">
-            <inheritdoc />
-        </member>
         <member name="M:YoutubeExplode.Videos.Streams.Framerate.CompareTo(YoutubeExplode.Videos.Streams.Framerate)">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.Equals(YoutubeExplode.Videos.Streams.Framerate)">
+        <member name="M:YoutubeExplode.Videos.Streams.Framerate.ToString">
             <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.op_Equality(YoutubeExplode.Videos.Streams.Framerate,YoutubeExplode.Videos.Streams.Framerate)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.op_Inequality(YoutubeExplode.Videos.Streams.Framerate,YoutubeExplode.Videos.Streams.Framerate)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.op_GreaterThan(YoutubeExplode.Videos.Streams.Framerate,YoutubeExplode.Videos.Streams.Framerate)">
-            <summary>
-            Comparison.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.Framerate.op_LessThan(YoutubeExplode.Videos.Streams.Framerate,YoutubeExplode.Videos.Streams.Framerate)">
-            <summary>
-            Comparison.
-            </summary>
         </member>
         <member name="T:YoutubeExplode.Videos.Streams.IAudioStreamInfo">
             <summary>
@@ -1307,25 +1060,6 @@
         <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.Equals(YoutubeExplode.Videos.Streams.VideoResolution)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.op_Equality(YoutubeExplode.Videos.Streams.VideoResolution,YoutubeExplode.Videos.Streams.VideoResolution)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.Streams.VideoResolution.op_Inequality(YoutubeExplode.Videos.Streams.VideoResolution,YoutubeExplode.Videos.Streams.VideoResolution)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="T:YoutubeExplode.Videos.Video">
             <summary>
             YouTube video metadata.
@@ -1349,11 +1083,6 @@
         <member name="P:YoutubeExplode.Videos.Video.Author">
             <summary>
             Video author.
-            </summary>
-        </member>
-        <member name="P:YoutubeExplode.Videos.Video.ChannelId">
-            <summary>
-            Video channel ID.
             </summary>
         </member>
         <member name="P:YoutubeExplode.Videos.Video.UploadDate">
@@ -1386,7 +1115,7 @@
             Engagement statistics for this video.
             </summary>
         </member>
-        <member name="M:YoutubeExplode.Videos.Video.#ctor(YoutubeExplode.Videos.VideoId,System.String,System.String,YoutubeExplode.Channels.ChannelId,System.DateTimeOffset,System.String,System.TimeSpan,YoutubeExplode.Common.ThumbnailSet,System.Collections.Generic.IReadOnlyList{System.String},YoutubeExplode.Common.Engagement)">
+        <member name="M:YoutubeExplode.Videos.Video.#ctor(YoutubeExplode.Videos.VideoId,System.String,System.String,System.DateTimeOffset,System.String,System.TimeSpan,YoutubeExplode.Common.ThumbnailSet,System.Collections.Generic.IReadOnlyList{System.String},YoutubeExplode.Common.Engagement)">
             <summary>
             Initializes an instance of <see cref="T:YoutubeExplode.Videos.Video"/>.
             </summary>
@@ -1437,25 +1166,6 @@
         <member name="M:YoutubeExplode.Videos.VideoId.ToString">
             <inheritdoc />
         </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.Equals(YoutubeExplode.Videos.VideoId)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.Equals(System.Object)">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.GetHashCode">
-            <inheritdoc />
-        </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.op_Equality(YoutubeExplode.Videos.VideoId,YoutubeExplode.Videos.VideoId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.op_Inequality(YoutubeExplode.Videos.VideoId,YoutubeExplode.Videos.VideoId)">
-            <summary>
-            Equality check.
-            </summary>
-        </member>
         <member name="M:YoutubeExplode.Videos.VideoId.op_Implicit(System.String)~YoutubeExplode.Videos.VideoId">
             <summary>
             Converts string to ID.
@@ -1464,12 +1174,6 @@
         <member name="M:YoutubeExplode.Videos.VideoId.op_Implicit(YoutubeExplode.Videos.VideoId)~System.String">
             <summary>
             Converts ID to string.
-            </summary>
-        </member>
-        <member name="M:YoutubeExplode.Videos.VideoId.TryParse(System.String)">
-            <summary>
-            Attempts to parse the specified string as a video ID or URL.
-            Returns null in case of failure.
             </summary>
         </member>
         <member name="T:YoutubeExplode.YoutubeClient">
